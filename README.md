@@ -1,4 +1,4 @@
-#**HELM**
+# **HELM**
 
 Esta práctica tuvo como propósito la familiarización con Helm, una herramienta de gestión de paquetes para Kubernetes que facilita la instalación, configuración y despliegue de aplicaciones a través de charts.
 
@@ -104,5 +104,6 @@ De modo que, se obtiene el nombre del pod, el puerto del contenedor asociado al 
 ![alt text](image-1.png)
 
 De esta forma, la aplicación fue accesible desde el navegador mediante http://127.0.0.1:8080, mostrando el comportamiento esperado:
+
 
 ![alt text](image.png)

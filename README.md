@@ -4,7 +4,7 @@ Esta práctica tuvo como propósito la familiarización con Helm, una herramient
 
 Helm permite parametrizar las plantillas YAML utilizadas por Kubernetes, reduciendo la complejidad de la gestión y el versionamiento de despliegues al posibilitar la reutilización de configuraciones mediante valores dinámicos definidos en *values.yaml*.
 
-##**Instalación:** 
+## **Instalación:** 
 El procedimiento se realizó siguiendo la documentación oficial de Helm, específicamente para la distribución Ubuntu.
 Los pasos ejecutados fueron los siguientes:
 
@@ -12,9 +12,11 @@ Los pasos ejecutados fueron los siguientes:
 sudo apt-get install curl gpg apt-transport-https --yes
 curl -fsSL https://packages.buildkite.com/helm-linux/helm-debian/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
 ´´´
+
 ´´´bash
 echo "deb [signed-by=/usr/share/keyrings/helm.gpg] https://packages.buildkite.com/helm-linux/helm-debian/any/ any main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
 ´´´
+
 ´´´bash
 sudo apt-get update
 ´´´
@@ -28,7 +30,7 @@ Para verificar la instalación se utilizó el siguiente comando:
 ´´´bash
 helm version --short
 ´´´
-##**Gestión de repositorios**
+## **Gestión de repositorios**
 
 Helm permite agregar múltiples repositorios de charts. Además, es importante destacar que es posible añadir cuantos repositorios se requieran. El comando presentado a continuación es usado para añadir el repositorio oficial de helm:
 
@@ -107,3 +109,4 @@ De esta forma, la aplicación fue accesible desde el navegador mediante http://1
 
 
 ![alt text](image.png)
+
